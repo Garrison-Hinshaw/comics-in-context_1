@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import RequestFormButton from './RequestFormButton'
+import './App.css';
 
 
 export default function SubmitForm() {
@@ -18,9 +19,9 @@ export default function SubmitForm() {
           Your Email:
           <input type="text" />
         </label>
-
+      <div className="submitButton">
         <RequestFormButton />
-      
+      </div>
       </form> 
     </div>
   );
